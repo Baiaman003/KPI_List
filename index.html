@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>kpi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jQuery.js"></script>
+</head>
+<body>
+    <div class="add_modal">
+        <form class="add_form">
+            <div class="btnX">x</div>
+            Данные студента
+            <input type="text" name="fio" placeholder="ФИО" >
+            <input type="text" name="group" placeholder="Группа" >
+            <input type="text" name="urlFoto" placeholder="URL foto" value="https://blinmen.ru/wp-content/uploads/2011/09/user-profile.png">
+            <span>KPI студента</span>
+            <input class="kpiInp" type="number" name="late" placeholder="Посещение" value="0">
+            <input class="kpiInp" type="number" name="tasks" placeholder="Задании" value="0">
+            <input class="kpiInp" type="number" name="int" placeholder="Интервю" value="0">
+            <input class="kpiInp" type="number" name="bonus" placeholder="Доп Балы" value="0">
+            <button class="btnAdd">Добавить</button>
+        </form>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div class="student_modal">
+        <form class="student_form">
+            
+        </form>
+    </div>
+    <!-- ------------------------------------------------- -->
+    <div class="container">
+        <ul class="slides_img">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="inner">
+            <h1>Список студентов</h1>
+            <div>
+                <input type="text" placeholder="Поиск" class="inpSearch">
+                <button class="openAddModal">+</button>
+            </div>
+            <ul class="students_list">
+            </ul>
+            <div class="paginate">
+                <button class="btnPrev">Prev</button>
+                <button class="btnNext">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
